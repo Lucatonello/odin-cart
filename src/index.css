@@ -1,0 +1,54 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+#contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));;
+  grid-gap: 30px;
+  margin-left: 70px;
+}
+.box {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 400px;
+}
+
+.box > img{
+  height: 70%;
+  width: 100%;
+}
+.description > h3, .description > p {
+  margin: 10px 0px 5px 0px;
+  padding: 0px;
+}
+.description > h3 {
+  font-size: 13px;
+}
+.description {
+  padding: 10 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(38, 0, 255, 0.486);
+  padding: 30px;
+}
+.link {
+  margin: 0px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgba(38, 0, 255, 0.685);
+}
+.link:active {
+  background: red;
+}
+.link:hover {
+  background-color: rgba(38, 0, 255, 0.8);
+  color: white;
+}
